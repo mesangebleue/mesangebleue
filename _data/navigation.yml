@@ -8,10 +8,8 @@ main:
     url: /informatique"
   - title: "Sport"
     url: /sport/
-
   - title: "Voyages"
-      url: /voyages/
-
+    url: /voyages/
 docs:
   - title : "OpenVSwitch CheatSheet"
     url: /OpenVSwitch_CheatSheet/
