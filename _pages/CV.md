@@ -1,38 +1,50 @@
 ---
 layout: single
-classes: wide
+classes:
+    cv
+
 title: Curriculum Vitae
 permalink: /CV/
-toc: true
-header:
-  image: /assets/images/mesange1.jpeg
-
+sidebar:
+        nav: cv_nav
 ---
+
+
+| Télécharger : | [CV.pdf]({% link /assets/files/cv-FB-IngenieurDev-2025-fr_19102025_v1.pdf %}){: .btn .btn--primary} | [CV.doc]({% link /assets/files/cv-FB-IngenieurDev-2025-fr_19102025_v1.doc %}){: .btn .btn--primary} |
+{: .wide .cvmax}
+
+
+
+___
+
 Fabrice Belle
+
+47 ans
+
+Nationalité : Française
 
 Permis B
 
-40 ans
-Nationalité : Française
 Habilitations : Secret Défense, Secret NATO
 
 
 
 # Ingénieur de développement
-{: .notice--warning}
+
 
 Système et Cyber-Sécurité
-15 ans d'expérience
-{: .notice--info}
+20 ans d'expérience
+
 
 ---
 
-## Compétences clés
-{: .notice--warning}
+## Compétences clés {#competences-cles}
 
+ - Développement Rust
  - Développement C, C++ en environnement Linux
  - Développement système (OS) et sécurité, virtualisation
  - Développement environnement embarqué, bootloader (Uboot), OpenWRT
+ - Développement réseau, box internet, xDSL, GPON, XGSPON
  - Développement Système, bas niveau dans OS temps réel
  - Développement embarqué IMX7, freeRTOS
  - Développement Linux ( driver, Xen,  applicatif Qt5)
@@ -40,14 +52,42 @@ Système et Cyber-Sécurité
  - Administration système (Linux)
 
 Travail dans le domaine de la défense en environnement sécurisé, et dans le domaine de l’embarqué
+Gestion de certification ANSSI CSPN
 
 
+## Expériences professionnelles {#experiences-professionnelles}
 
+### 05.2022 – 2025 : Ingénieur senior chez Seckiot
 
-## Expériences professionnelles
-{: .notice--warning}
+Produit d’analyse réseau pour la cartographie et la détection sur des réseaux industriels (www.seckiot.fr).
 
-### 05.2018 – 2018 : Guarani, en mission chez Til Technologies / Sorhea
+Activités :
+- Serveur web en Rust
+- Développement de la PKI de communication pour les micro-services (Hashicorp Vault)
+- Communications entre le concentrateur et les sondes par Kafka
+- Couche d’administration des sondes
+- Gestion du processus pour une certification CSPN
+
+Environnement :
+- Rust
+- Docker
+- Kafka
+- Git, Gitlab, Jira
+
+### 02.2019 – 2020 : Guarani en mission chez SFR
+
+Adaptation des box internet pour les entreprises.
+Dévelopement sous OpenWRT, QOS, PoC avec DPDK/VPP
+
+Activités :
+- Adaptation de box avec un nouveau framwork de dév sur OpenWRT
+- Sécurisation de la Box
+- Adaptation de Box XDSL
+- Adaptation de Box GPON (Fibre 1Gb) et XGSPON (Fibre 10Gb)
+- Différents PoC (Proof of Concept) sur UCPE (Universal CPE), accélération de paquets par logiciels avec DPDK/VPP
+- Développement C / script Bash / Python
+
+### 05.2018 – 02.2019 : Guarani, en mission chez Til Technologies / Sorhea
 
 Sécurisation d’une plateforme de contrôle d’intrusion sur carte embarquée chez Sorhea.
 
@@ -103,8 +143,7 @@ Environnement :
  - méthode Scrum
 
 
-### 2002 – 2017: Ingénieur informatique chez Bertin Technologies – Conseil en Innovation Industrielle
-                        (département Sécurité des Systèmes d'Information)
+### 2002 – 2017: Ingénieur informatique chez Bertin Technologies – Conseil en Innovation Industrielle (département Sécurité des Systèmes d'Information)
 
 #### Décembre 2016 – 2017 : Ingénieur build et test sur le projet SHES
 
@@ -135,7 +174,7 @@ Filtre réseau sécurisé basé sur PolyXene
 
 #### 2005 – 2017  : Ingénieur de développement sur le projet PolyXène
 
- http://www.polyxene.fr/  Développement d'un Système d'exploitation sécurisé multi-niveaux
+ [http://www.polyxene.fr/](http://www.polyxene.fr/)  Développement d'un Système d'exploitation sécurisé multi-niveaux
 
 Activités :
  - Construction automatique de Linux embedded, BuildRoot
@@ -193,10 +232,13 @@ Planification automatique de mouvement dans un environnement 3D.
 
 Stage de maîtrise chez Bull (Grenoble).
 
-# Compétences
+# Compétences {#competences}
 
 ## Techniques :
 
+ - Expertise Rust
+ - Expertise RustExpertise Docker
+ - Expertise Gitlab CI/CD
  - Expertise du C
  - Expertise d'Unix et Linux
  - Maîtrise de C++
@@ -223,6 +265,7 @@ Réseau : IP, TCP, UDP, HTTP, IPSec, IKE, DNS, DHCP, HTTPS, 802.1X
 ## Fonctionnelles :
  - Travail avec l'administration, Institut National de Veille Sanitaire
  - Travail dans le monde de la défense, DGA, CELAR, ANSSI
+ - Suivi d’une certification CSPN
 
 ## Langues
  - Anglais     : lu,écrit, parlé couramment (Voyage de 3 mois aux USA)
@@ -230,7 +273,7 @@ Réseau : IP, TCP, UDP, HTTP, IPSec, IKE, DNS, DHCP, HTTPS, 802.1X
  - Espagnol  : notions
  - Chinois    : notions
 
-# Formation
+# Formation {#formation}
 
  - Formation « méthodes Agile » 2018
  - Formation « Développement sécurisé » 2018
@@ -244,6 +287,8 @@ Réseau : IP, TCP, UDP, HTTP, IPSec, IKE, DNS, DHCP, HTTPS, 802.1X
     - AI for Robotics (2012- Udacity)
     - Image and video processing: From Mars to Hollywood with a stop at the hospital (2013 – Coursera)
     - Machine Learning (Coursera)
+    - Build Basic GAN , Getting start with TensorFlow 2 (Coursera 2020)
+    - Comprendre le cœur d’internet : les réseaux d’opérateurs, Les réseaux FTTH (funmooc 2020)
 
 2000 - 2001 :
 DESS IRR(Intelligence Artificielle, Reconnaissance des formes et Robotique)
@@ -255,7 +300,7 @@ Maîtrise d'Informatique, Université de Grenoble
 1998 - 1999 :
 Licence d'Informatique, Université de Grenoble
 
-# Centres d'intérêt
+# Centres d'intérêt {#centres-d-interet}
 
  - Sport de Combat, arts martiaux (Wing Tsun, Penchak Silat),
  - Voile,
